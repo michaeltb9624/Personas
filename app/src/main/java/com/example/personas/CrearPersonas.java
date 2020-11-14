@@ -23,14 +23,15 @@ public class CrearPersonas extends AppCompatActivity {
     public void guardar (View v){
         String ced, nom,apell;
         Persona p;
-
-        ced = cedula.getText().toString();
-        nom = nombre.getText().toString();
-        apell = apellido.getText().toString();
-        p = new Persona(ced,nom,apell);
-        p.guardar();
-        Toast.makeText(this, R.string.mensaje_guardado_exitoso , Toast.LENGTH_LONG).show();
-        limpiar();
+        if(validar()) {
+            ced = cedula.getText().toString();
+            nom = nombre.getText().toString();
+            apell = apellido.getText().toString();
+            p = new Persona(ced, nom, apell);
+            p.guardar();
+            Toast.makeText(this, R.string.mensaje_guardado_exitoso, Toast.LENGTH_LONG).show();
+            limpiar();
+        }
     }
 
     public void limpiar (View v){
@@ -42,5 +43,24 @@ public class CrearPersonas extends AppCompatActivity {
         nombre.setText("");
         apellido.setText("");
         cedula.requestFocus();
+    }
+
+    public boolean validar(){
+        if(cedula.getText().toString().isEmpty()){
+            cedula.setError(getString(R.string.ingrese_cedula));
+            cedula.requestFocus();
+            return false;
+        }
+        if(nombre.getText().toString().isEmpty()){
+            nombre.setError(getString(R.string.ingrese_nombre));
+            nombre.requestFocus();
+            return false;
+        }
+        if(apellido.getText().toString().isEmpty()){
+            apellido.setError(getString(R.string.ingrese_apellido));
+            apellido.requestFocus();
+            return false;
+        }
+        return true;
     }
 }

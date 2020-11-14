@@ -12,4 +12,7 @@
     <string name="titulo_listar_personas">List People</string>
     <string name="listar">List</string>
     <string name="mensaje_guardado_exitoso">Person saved successfully</string>
+    <string name="ingrese_cedula">Enter identification</string>
+    <string name="ingrese_nombre">Enter name</string>
+    <string name="ingrese_apellido">Enter lastname</string>
 </resources>

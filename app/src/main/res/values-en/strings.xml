@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">People</string>
-    <string name="titulo_crear">Create People</string>
+    <string name="app_name">Personas</string>
+    <string name="titulo_crear">CREATE PEOPLE</string>
     <string name="cedula">Identification</string>
     <string name="nombre">Name</string>
     <string name="apellido">Lastname</string>
@@ -9,10 +9,10 @@
     <string name="limpiar">Clean</string>
     <string name="numero">No.</string>
     <string name="crear">Create</string>
-    <string name="titulo_listar_personas">List People</string>
+    <string name="titulo_listar_personas">PEOPLE LIST</string>
     <string name="listar">List</string>
     <string name="mensaje_guardado_exitoso">Person saved successfully</string>
-    <string name="ingrese_cedula">Enter identification</string>
-    <string name="ingrese_nombre">Enter name</string>
-    <string name="ingrese_apellido">Enter lastname</string>
+    <string name="ingrese_cedula">Type id</string>
+    <string name="ingrese_nombre">Type name</string>
+    <string name="ingrese_apellido">Type lastname</string>
 </resources>

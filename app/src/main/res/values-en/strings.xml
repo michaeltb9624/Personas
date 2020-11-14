@@ -11,4 +11,5 @@
     <string name="crear">Create</string>
     <string name="titulo_listar_personas">List People</string>
     <string name="listar">List</string>
+    <string name="mensaje_guardado_exitoso">Person saved successfully</string>
 </resources>

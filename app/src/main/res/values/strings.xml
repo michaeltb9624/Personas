@@ -10,6 +10,7 @@
     <string name="numero">No.</string>
     <string name="listar">Listar</string>
     <string name="crear">Crear</string>
+    <string name="mensaje_guardado_exitoso">\"Persona guardada exitosamente \"</string>
     <string-array name="opciones">
         <item>@string/crear</item>
         <item>@string/listar</item>

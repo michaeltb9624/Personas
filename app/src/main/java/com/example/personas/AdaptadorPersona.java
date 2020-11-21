@@ -3,6 +3,7 @@ package com.example.personas;
 import android.app.Person;
 import android.content.Context;
 import android.content.res.Resources;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 public class AdaptadorPersona extends BaseAdapter {
 
@@ -60,6 +62,7 @@ public class AdaptadorPersona extends BaseAdapter {
         Persona p = personas.get(position);
 
         //setear los elementos a la vista
+
         foto.setImageDrawable(res.getDrawable(p.getFoto()));
         cedula.setText(p.getCedula());
         nombre.setText(p.getNombre());
